@@ -1,0 +1,10 @@
+<div class="container">
+    <h2>User Profile</h2>
+    <div *ngIf="user">
+      <div><strong>Email Address : </strong> {{ user.email }}</div>
+      <div><strong>Password : </strong> {{ user.password }}</div>
+      
+    </div>
+    <div class="error" *ngIf="error">{{ error }}</div>
+  </div>
+  
